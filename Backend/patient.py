@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import get_connection
 from typing import Optional
 from pydantic import BaseModel
+from mysql.connector import Error
 import uuid  # Import uuid for UUID generation
 
 # FastAPI app instance
